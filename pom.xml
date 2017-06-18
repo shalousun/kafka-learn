@@ -8,6 +8,7 @@
     <modules>
         <module>SpringKafka</module>
         <module>SpringIntegrationKafka</module>
+        <module>SpringbootKafka</module>
     </modules>
     <packaging>pom</packaging>
 
