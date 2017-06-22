@@ -27,8 +27,9 @@ public class SimpleConsumer {
         consumer.subscribe(Arrays.asList("jsa-kafka-topic"));
         while (true) {
             ConsumerRecords<String, String> records = consumer.poll(100);
-            for (ConsumerRecord<String, String> record : records)
+            for (ConsumerRecord<String, String> record : records) {
                 System.out.printf("offset = %d, key = %s, value = %s", record.offset(), record.key(), record.value());
+            }
         }
     }
 }
