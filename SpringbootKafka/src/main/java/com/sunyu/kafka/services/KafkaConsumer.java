@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class KafkaConsumer {
-	private static final Logger log = LoggerFactory.getLogger(KafkaProducer.class);
+	private static final Logger log = LoggerFactory.getLogger(KafkaConsumer.class);
 
 	@Autowired
 	MessageStorage storage;
